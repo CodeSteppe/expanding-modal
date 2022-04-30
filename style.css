@@ -59,7 +59,7 @@ a {
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   overflow: hidden;
   display: none;
-  animation-duration: 1s;
+  animation-duration: 0.8s;
   animation-timing-function: ease-in;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
