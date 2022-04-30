@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal1</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="page">
+    <div class="content">
+      <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta odit placeat quos soluta error. Ratione
+        deleniti sapiente nulla voluptates at, eos illum quibusdam voluptatem provident error quod velit nam.</h2>
+      <img src="./image.jpg">
+      <a href="#" onclick="toggle()">Read More</a>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-content">
+      <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur natus, ad, laudantium sequi quae
+        cupiditate
+        facere ea soluta alias minima odit consequuntur corrupti similique reiciendis sunt fugit, iusto eveniet nemo!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque id adipisci consequuntur possimus? Facere
+        voluptas
+        fugiat voluptate dolorum! Consequatur laudantium ut nihil, aliquam quod provident dicta quia assumenda non
+        quisquam.
+      </p>
+      <a href="#" onclick="toggle()">Close</a>
+    </div>
+  </div>
+
+  <script>
+    function toggle() {
+      document.body.classList.toggle('active');
+
+      const modal = document.querySelector('.modal');
+      if (document.body.classList.contains('active')) {
+        modal.style.display = 'block';
+      }
+    }
+  </script>
+</body>
+
+</html>
