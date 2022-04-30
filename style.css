@@ -65,11 +65,10 @@ a {
   display: none;
   animation: shrink 1s ease-in 1;
   animation-fill-mode: forwards;
-  display: flex;
 }
 
 .active .modal {
-  display: block;
+  display: flex;
   animation: expand 1s ease-in 1;
   animation-fill-mode: forwards;
 }
