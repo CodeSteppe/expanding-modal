@@ -64,9 +64,9 @@ a:active {
 
 .modal {
   position: fixed;
-  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  top: 40%;
+  transform: translate(-50%, -40%);
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
   overflow: hidden;
@@ -85,11 +85,16 @@ a:active {
 
 .modal-content {
   width: var(--width);
+  max-height: 90vh;
   padding: 50px;
   margin: auto;
   /* center overflow content */
   margin-left: 50%;
   transform: translateX(-50%);
+}
+
+.active .modal-content {
+  overflow-y: auto;
 }
 
 @keyframes expand {
