@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sriracha&display=swap");
 
+:root {
+  --width: min(1000px, 80vw);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -20,7 +24,7 @@
 
 .content {
   position: relative;
-  max-width: 800px;
+  max-width: var(--width);
 }
 
 .h2 {
@@ -81,7 +85,7 @@ a:active {
 }
 
 .modal-content {
-  width: 70vw;
+  width: var(--width);
   padding: 50px;
   margin: auto;
   /* center overflow content */
@@ -99,14 +103,14 @@ a:active {
     color: transparent;
   }
   100% {
-    width: 70vw;
+    width: var(--width);
     max-height: 100vh;
   }
 }
 
 @keyframes shrink {
   0% {
-    width: 70vw;
+    width: var(--width);
     max-height: 100vh;
   }
   60% {
