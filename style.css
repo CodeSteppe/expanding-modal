@@ -42,6 +42,15 @@ a {
   text-decoration: none;
   color: #fff;
   background-color: #111;
+  transition: 0.3s;
+}
+
+a:hover {
+  filter: brightness(200%);
+}
+
+a:active {
+  filter: brightness(100%);
 }
 
 .active .page {
