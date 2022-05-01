@@ -72,7 +72,7 @@ a {
 }
 
 .modal-content {
-  min-width: 70vw;
+  width: 70vw;
   padding: 50px;
   margin: auto;
   /* center overflow content */
