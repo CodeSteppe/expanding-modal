@@ -79,7 +79,7 @@ a:active {
 }
 
 .active .modal {
-  display: flex;
+  display: block;
   animation-name: expand;
 }
 
